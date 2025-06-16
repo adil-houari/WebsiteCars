@@ -1,0 +1,117 @@
+.header_color {
+    background-color: #39393d;
+}
+
+#shoppingBag{
+    color:#39393d ;
+}
+
+#shopping_color {
+    color: #faf8f8;
+}
+
+#login_color {
+    color: #faf8f8;
+}
+#favorite_color {
+    color: #faf8f8;
+}
+.banner{
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #39393d79;
+    box-shadow: 0px 11px 15px 0px #611414bf;;
+}
+
+.title {
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ourteam {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.status {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #bd1a3b;
+}
+
+
+.ourcars_tekst{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #7d1717df;
+    padding-bottom: 15px;
+}
+
+#team{
+    background-color: #b3b3b74f;
+}
+
+#ourteam{
+    border-bottom: solid 1px #7d1717df;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+}
+
+.btn{
+    background-color: #7d1717df;
+    color: #faf8f8;
+    
+}
+
+#submit_button {
+background-color: #7d1717df;
+}
+
+.footer{
+    background-color: black;
+}
+
+.tekst_formulier{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #7d1717df;
+    padding-bottom: 15px;
+}
+
+#continue {
+   font-weight: 500 ;
+   transition: background 0.3s, width 1s;
+
+}
+
+#continue:hover {
+    background-color: #7d1717df;
+    color: #f1efef;
+}
+
+#imgMaps{
+    width:90% ;
+    height:450px;
+}
+
+.col-auto {
+    display: flex;
+}
+
+.card {
+    flex: 1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+
+.card-price {
+    margin-top: auto;
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2LUXY</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Manjari:wght@100;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ****************************** HEADER ****************************** -->
+  <!-- ****************************** HEADER ****************************** -->
+  <!-- ****************************** HEADER ****************************** -->
+
+  <header id="home" class="header_color">
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="col">
+          <a class="d-inline-block fw-bold text-white text-decoration-none" href=""><i class="bi bi-car-front-fill"></i>
+            2LUXY</a>
+        </div>
+
+
+        <!-- *************** NAV ************** -->
+        <!-- *************** NAV ************** -->
+        <!-- *************** NAV ************** -->
+        <div class="col d-flex justify-content-center">
+          <nav class="navbar navbar-expand-lg navbar-light text-center">
+            <div class="container-fluid">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white-50" href="#cars" id="navbarDropdownMenuLink"
+                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cars
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Porsche</a></li>
+                      <li><a class="dropdown-item" href="#">Bentley</a></li>
+                      <li><a class="dropdown-item" href="#">Aston Martin</a></li>
+                      <li><a class="dropdown-item" href="#">Ferrari</a></li>
+                      <li><a class="dropdown-item" href="#">BMW</a></li>
+                      <li><a class="dropdown-item" href="#">Mercedes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#ourteam">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#ourcars">Our cars</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- *************** SHOPPING AND LOGIN ************** -->
+        <!-- *************** SHOPPING AND LOGIN ************** -->
+        <!-- *************** SHOPPING AND LOGIN ************** -->
+        <div class="col text-end col">
+          <div class="">
+            <a class="text-white-50 me-3 " href=""><i id="login_color" class="bi bi-person-square"></i></a>
+            <a class="text-white-50 me-3" href=""><i id="favorite_color" class="bi bi-heart"></i></a>
+            <a id="shoppingBag" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i id="shopping_color" class="bi bi-bag-fill"><span id="bagBadge" class="badge bg-secondary text-primary ms-1"></span></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- *************** OFFCANVAS ************** -->
+    <!-- *************** OFFCANVAS ************** -->
+    <!-- *************** OFFCANVAS ************** -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel" class="ms-5 ps-5"><i class="bi bi-bag-fill ms-3 me-2"></i>Shopping cart</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h5 id="emptyCart" class="text-center">Empty shopping cart <i class="bi bi-exclamation-triangle-fill"></i></h5>
+        <div id="bodycanvas">
+
+        </div>
+
+
+        <div class="d-flex flex-column">
+          <div class="d-grid gap-2">
+            <button id="gaVerderButton" class="btn btn-primary disabled" type="button">Chekout </button>
+          </div>          
+          <button id="continue" class="rounded mt-5" data-bs-dismiss="offcanvas" aria-label="Close">Continue
+            Shopping</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ****************************** MAIN ****************************** -->
+  <!-- ****************************** MAIN ****************************** -->
+  <!-- ****************************** MAIN ****************************** -->
+  <main>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/2021_911_gt3.jpg" class="d-block w-100" alt="Porsche GT3 RS">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="title">Porsche GT3 RS</h4>
+            <p class="banner">Step into the driver's seat of the breathtaking Porsche GT3 RS and experience the unparalleled combination of power, precision, and beauty that will elevate your driving experience to unprecedented heights.
+
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/bentleywallpaper.jpg" class="d-block w-100" alt="Bentley continental">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="title">Bentley continental GT</h4>
+            <p class="banner">Imagine enveloping yourself in luxurious comfort and pure elegance as you traverse the world in the stunning Bentley Continental.
+              Let yourself be captivated by the timeless class and refined performance that this car offers, and indulge in the ultimate driving experience you have always longed for
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/dbs.jpg" class="d-block w-100" alt="Aston Martin DBS">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="title">Aston Martin DBS</h4>
+            <p class="banner">Experience the irresistible attraction of the Aston Martin DBS. Step in, feel the adrenaline coursing through your veins and be enchanted by the perfect fusion of luxury and performance. The DBS is waiting for you, ready to take you on an unforgettable adventure full of power, elegance, and pure driving pleasure.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- ******************** CARS ******************** -->
+    <!-- ******************** CARS ******************** -->
+    <!-- ******************** CARS ******************** -->
+    <div class="container mb-4">
+      <div class="text-center mb-5">
+        <h3 id="ourcars" class="text-black mt-4">Cars</h3>
+        <p class="ourcars_tekst">Welcome to the website of 2Luxy, the destination for purchasing extraordinary luxury cars.
+        </p>
+      </div>
+
+      <!-- ****************** First row ****************** -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-auto m-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/pgt3rs.jpg" class="card-img-top" alt="porsche gt3 rs">
+            <div class="card-body">
+              <h5 class="card-title">Porsche GT3 RS</h5>
+              <p class="card-text">
+                Porsche GT3 RS: uncompromising performance and timeless elegance wrapped in a breathtaking vehicle that instantly arouses desire.</p>
+              <p class="card-price fw-light">€344 456</p>
+              <button id="buttonPorsche" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                onclick="addToCart('Porche GT3 RS', 344456)" class="btn btn-primary" type="button">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto m-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/pbentley.jpg" class="card-img-top" alt="bentley continental">
+            <div class="card-body">
+              <h5 class="card-title">Bentley Continental</h5>
+              <p class="card-text">
+                The Bentley Continental: timeless luxury and unparalleled performance, combined in a stunning sports car that immediately impresses.</p>
+              <p class="card-price fw-light">€250 789</p>
+              <button id="buttonBentley" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                onclick="addToCart('Bentley Continental', 250789)" class="btn btn-primary" type="button">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto m-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/pdbs.jpg" class="card-img-top" alt="aston dbs">
+            <div class="card-body">
+              <h5 class="card-title">Aston Martin DBS</h5>
+              <p class="card-text">The Aston Martin DBS: timeless elegance and breathtaking performance in one irresistible powerhouse.
+
+              </p>
+              <p class="card-price fw-light">€310 621</p>
+              <button id="buttonAston" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                onclick="addToCart('Aston Martin DBS', 310621)" class="btn btn-primary" type="button">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ****************** Second row ****************** -->
+      <div class="row justify-content-center mb-4 ">
+        <div class="col-auto m-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/romq.jpg" class="card-img-top" alt="porsche gt3 rs">
+            <div class="card-body">
+              <h5 class="card-title">Ferrari Roma</h5>
+              <p class="card-text">Experience the enchantment of the Ferrari Roma: Italian elegance and breathtaking performance in one ultimate sports car.
+              </p>
+              <p class="card-price fw-light">€220 348</p>
+              <button id="buttonFerrari" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                onclick="addToCart('Ferrari Roma', 220348)" class="btn btn-primary" type="button">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto m-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/m8grandcoupe.jpg" class="card-img-top" alt="bentley continental">
+            <div class="card-body">
+              <h5 class="card-title">BMW M8 Gand coupe</h5>
+              <p class="card-text">The BMW M8: ultimate power and luxury, wrapped in a breathtaking sports car that immediately impresses.
+              </p>
+              <p class="card-price fw-light">€177 465</p>
+              <button id="buttonBMW" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                onclick="addToCart('BMW M8', 177465)" class="btn btn-primary" type="button">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto m-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/amggtse.jpg" class="card-img-top" alt="aston dbs">
+            <div class="card-body">
+              <h5 class="card-title">Mercedes AMG GT63 S E</h5>
+              <p class="card-text">The AMG GT63se: boundless power and unparalleled elegance come together in this breathtaking sports car that immediately fascinates.
+              </p>
+              <p class="card-price fw-light">€285 357</p>
+              <button id="buttonMercedes" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                onclick="addToCart('Mercedes AMG GT63 SE', 285357)" class="btn btn-primary" type="button">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************** MODAL ******************** -->
+    <!-- ******************** MODAL ******************** -->
+    <!-- ******************** MODAL ******************** -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <p class="fs-5">Added to shopping cart</p>
+            <p><i class="bi bi-check-square" style="width: 40px; height: 40px;"></i></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ******************** TEAM ******************** -->
+    <!-- ******************** TEAM ******************** -->
+    <!-- ******************** TEAM ******************** -->
+    <div id="team" class="pt-3 pb-4">
+      <div class="container mb-5 mt-2 mb-2">
+        <div class="text-center">
+          <h3 id="ourteam"  class="text-black mt-2">
+            Our perfect team</h3>
+        </div>
+
+
+        <div class="container mb-5 mt-3 mb-3">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-3">
+            <div class="col">
+              <div class="card h-100 mx-auto" style="max-width: 80%;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="img/pdg.png" class="img-fluid rounded-circle py-2 ps-2 pe-2" alt="PDG">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h4 class="card-title">Adil HR</h4>
+                      <p class="status">CEO & Founder</p>
+                      <p class="card-text">Adil, founder and passionate seller of luxury vehicles.</p>
+                      <div class="social pb-1">
+                        <a class="text-muted" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-twitter"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto" style="max-width: 80%;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="img/seo.png" class="img-fluid rounded-circle py-2 ps-2 pe-2" alt="SEO">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h4 class="card-title">Philippe Haelen</h4>
+                      <p class="status">SEO</p>
+                      <p class="card-text">Philippe Haelen, experienced SEO expert and professional salesman at 2Luxy.
+                      </p>
+                      <div class="social pb-1">
+                        <a class="text-muted" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-twitter"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mb-5 mt-3 mb-3">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-3">
+            <div class="col">
+              <div class="card h-100 mx-auto" style="max-width: 80%;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="img/empl1.png" class="img-fluid rounded-circle py-2 ps-2 pe-2" alt="PDG">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h4 class="card-title">Patrick De Wolf</h4>
+                      <p class="status">Employee</p>
+                      <p class="card-text">
+                        Employee of 2Luxy, expert in luxury vehicles and customer satisfaction.
+                        </p>
+                      <div class="social pb-1">
+                        <a class="text-muted" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-twitter"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto" style="max-width: 80%;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="img/empl2.png" class="img-fluid rounded-circle py-2 ps-2 pe-2" alt="SEO">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h4 class="card-title">Charles Peeters</h4>
+                      <p class="status">Employee</p>
+                      <p class="card-text">
+                        A valued employee of 2Luxy, knowledgeable in luxury vehicles and customer satisfaction.
+                      </p>
+                      <div class="social pb-1">
+                        <a class="text-muted" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-twitter"></i></a>
+                        <a class="text-muted" href=""><i class="bi bi-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ******************** CONTACT ******************** -->
+    <!-- ******************** CONTACT ******************** -->
+    <!-- ******************** CONTACT ******************** -->
+    <div id="contact" class="contact">
+      <div class="container pt-1">
+        <div class="text-center mb-5 mt-2">
+          <div class="contact_tekst">
+            <h3>Contact</h3>
+            <p class="tekst_formulier">
+              For more information about a sports car or if in doubt, you can always contact 2LUXY via email or phone number, or you can fill out the form below.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+
+            <form>
+              <h5 class="mb-4">Contact Form</h5>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                <label for="floatingName">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingTel" placeholder="GSM/TELEFOON">
+                <label for="floatingName">Phone number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 200px"></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button id="submit_button" type="submit" class="btn text-white fw-bold">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+
+
+          <div class="col-md-6 mb-4">
+            <h5>Our Showroom</h5>
+            <div class="showroom_tekst mb-3">
+              <p>Odisee - Campus Brussel, <br> Stormstraat 2, 1000 Brussel</p>
+              <div class="links">
+                <a href="tel:+32123456789">+32 123 456789 <br></a>
+                <a href="mailto:Elekcars@gmail.com">2LUXYs@gmail.com</a>
+              </div>
+            </div>
+            <iframe id="imgMaps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12058.141160374254!2d4.358511078597638!3d50.84817029885235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3806a9e4063%3A0xec4c284c9a319b86!2sHUB%2C%201000%20Bruxelles!5e0!3m2!1sen!2sbe!4v1683372681826!5m2!1sen!2sbe"
+               style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ****************************** FOOTER ****************************** -->
+  <!-- ****************************** FOOTER ****************************** -->
+  <!-- ****************************** FOOTER ****************************** -->
+  <footer class="footer">
+    <div class="container">
+      <div class="">
+        <div class="col d-flex justify-content-between align-items-center text-white">
+          <p class="pt-2">©️ 2LUXY - Odisee Campus Brussel- 2023</p>
+
+          <div class="social pb-1">
+            <a class="text-white" href=""><i class="bi bi-facebook"></i></a>
+            <a class="text-white" href=""><i class="bi bi-twitter"></i></a>
+            <a class="text-white" href=""><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+  </script>
+
+  <script src="./javascript/home.js"></script>
+</body>
+
+</html>

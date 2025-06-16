@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gegevens</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/gegevens.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Manjari:wght@100;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="wrapper mb-5">
+            <div class="container">
+                <div id="topPage">
+                    <h1 class="text-center fw-bold fs-1">2LUXY</h1>
+                    <p class="text-center fs-3 me-2"><i class="bi bi-lock-fill"></i> Chekout</p>
+                </div>
+                <p id="formTekst">Please fill in the form below to continue the purchase </p>
+                <form id="form">
+                    <div class="row">
+
+                        <!-- ********** FIRSTNAME ********** -->
+                        <div class="form-floating mb-3 col">
+                            <input type="text" class="form-control pe-5" name="firstName" id="firstName"
+                                placeholder="firstName">
+                            <label class="ps-4" for="firstName">First name</label>
+                        </div>
+
+                        <!-- ********** LASTNAME ********** -->
+                        <div class="form-floating mb-3 col">
+                            <input type="text" class="form-control pe-5" name="lastName" id="lastName"
+                                placeholder="lastName">
+                            <label class="ps-4" for="lastName">Last name</label>
+                        </div>
+
+                    </div>
+
+                    <!-- ********** EMAIL ********** -->
+                    <div class="form-floating mb-3 col">
+                        <input type="email" class="form-control" id="email"
+                            placeholder="name@example.com">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+
+
+                    <!-- ********** PHONE ********** -->
+                    <div class="form-floating mb-3 col">
+                        <input type="tel" class="form-control" id="tel" placeholder="+32487768495">
+                        <label for="tel" class="form-label">Phone number</label>
+                        <p class="exemple">Exemple: +3248768195</p>
+                    </div>
+
+
+
+
+                    <!-- ********** STREET NAME ********** -->
+                    <div class="row mt-5">
+                        <div class="form-floating mb-3 col-10">
+                            <input type="text" class="form-control" id="streetName"
+                                placeholder="Strome Straat ">
+                            <label for="streetName" class="form-label ps-4">Street name</label>
+                        </div>
+                        <div class="form-floating mb-3 col-2">
+                            <input type="text" class="form-control" id="streetNb" placeholder="58 ">
+                            <label for="streetNb" class="form-label ps-4">Street Nb.</label>
+                        </div>
+                    </div>
+
+                    <!-- ********** CITY ********** -->
+                    <div class="row">
+                        <!-- ********** TOWNCITY ********** -->
+                        <div class="form-floating mb-3 col-7">
+                            <input type="text" class="form-control pe-5" name="TownCity" id="townCity"
+                                placeholder="TownCity">
+                            <label class="ps-4" for="townCity">Town/City  </label>
+                        </div>
+
+                        <!-- ********** POSTALCODE ********** -->
+                        <div class="form-floating mb-3 col-5">
+                            <input type="text" class="form-control pe-5" name="postalcode" id="postalCode"
+                                placeholder="postalcode">
+                            <label class="ps-4" for="postalCode">Postal code</label>
+                        </div>
+                    </div>
+
+
+                    <!-- ********** PAYMANT ********** -->
+                    <p id="addressINFO" class="mt-4 fs-4">Payment </p>
+                    <div class="mb-3">
+                        <label for="questionType" class="form-label">Paymant type</label>
+                        <select class="form-select form-select-sm ps-3 pt-3 pb-3" name="questionType" id="questionType">
+                            <option>Select a paymant option</option>
+                            <option>Paypal</option>
+                            <option>Debit Payment</option>
+                            <option>Credit Card</option>
+                            <option>Leasing</option>
+                        </select>
+                    </div>
+
+                    <!-- ********** CARDNAME ********** -->
+                    <div class="form-floating mb-3 col">
+                        <input type="text" class="form-control pe-5" name="cardName" id="cardName"
+                            placeholder="cardName">
+                        <label class="ps-3" for="cardName">Name on card</label>
+                    </div>
+
+                    <!-- ********** CARDNUMBER ********** -->
+                    <div class="form-floating mb-3 col">
+                        <input type="text" class="form-control" name="cardNumber" id="cardNumber"
+                            placeholder="cardNumber">
+                        <label class="ps-3" for="cardNumber">Card number</label>
+                        <p class="exemple">16 digits required</p>
+                    </div>
+                    <button id="clearAll" class="btn btn-primary mb-4" type="button">Clear all <i class="bi bi-trash3-fill"></i></button>
+
+
+
+
+
+
+
+                    <!-- ********** PAYBUTTON ********** -->
+                    <div class="d-grid gap-2">
+                        <button 
+                            data-sitekey="6LesjSomAAAAAM9k8r5zat1OR56MdmBSwESwqkoa" 
+                            data-callback='onSubmit' 
+                            data-action='submit'
+                            class="g-recaptcha btn btn-primary" 
+                            id="btnPay">Pay</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+    </main>
+
+  <!-- ****************************** FOOTER ****************************** -->
+  <!-- ****************************** FOOTER ****************************** -->
+  <!-- ****************************** FOOTER ****************************** -->
+  <footer class="footer">
+    <div class="container">
+      <div class="">
+        <div class="col d-flex justify-content-between align-items-center text-white">
+          <p class="pt-2">©️ 2LUXY - Odisee Campus Brussel- 2023</p>
+
+          <div class="social pb-1">
+            <a class="text-white" href=""><i class="bi bi-facebook"></i></a>
+            <a class="text-white" href=""><i class="bi bi-twitter"></i></a>
+            <a class="text-white" href=""><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+
+    <script src="./javascript/gegevens.js"></script>
+
+    <!-- ********* CAPTCHA ********* -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("form").submit();
+        }
+      </script>
+
+
+</body>
+
+</html>

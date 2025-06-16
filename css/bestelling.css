@@ -1,0 +1,60 @@
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+
+#yourOrders {
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+
+    border-bottom: 1px;
+    border-bottom-style: solid;
+}
+
+#commands {
+    background-color: #7d1717df;
+    transition: background 0.3s, width 1s;
+}
+
+#commands:hover {
+    background-color: #611414bf;
+    color: #f1efef;
+}
+
+
+
+#continueShop {
+    background-color: #7d1717df;
+    transition: background 0.3s, width 1s;
+}
+
+#continueShop:hover {
+    background-color: #611414bf;
+    color: #f1efef;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    border-top: 1px solid #d2d2d2df;
+    cursor: pointer
+}
+
+.order-item:hover {
+    background-color: #daeb96bf;
+}
+
+.order-item p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.order-item p:last-child {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
